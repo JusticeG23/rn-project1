@@ -6,13 +6,12 @@ export default function App() {
     const [outputText, setOutputText] = useState('I figured out how to change the text. yay.');
     return (
         <View style={styles.container}>
+            <Text>{outputText}</Text>
             <tr>
-                {/*<Text>{outputText}</Text>*/}
-                <td><Button title="Login" onPress={() => setOutputText('wow, it\'s different')}/></td>
-                {/*<Text> <br /></Text>*/}
-                <td><Text>    or    </Text></td>
-                {/*<Text> <br /></Text>*/}
-                <td><Button title="Sign Up" onPress={() => setOutputText('wow, it\'s different')}/></td>
+            {/*<Text>{outputText}</Text>*/}
+            <td><Button title="Login" onPress={() => setOutputText('wow, it\'s different')}/></td>
+            <td><Text style={{fontSize: 20}}>    or    </Text></td>
+            <td><Button title="Sign Up" onPress={() => setOutputText('wow, it\'s different')}/></td>
             </tr>
             <StatusBar style="auto"/>
         </View>
@@ -22,8 +21,9 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#996633',
+        backgroundColor: '#99ccff',
         alignItems: 'center',
         justifyContent: 'center',
     },
 });
+
