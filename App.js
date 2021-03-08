@@ -8,7 +8,6 @@ export default function App() {
         <View style={styles.container}>
             <Text>{outputText}</Text>
             <tr>
-            {/*<Text>{outputText}</Text>*/}
             <td><Button title="Login" onPress={() => setOutputText('wow, it\'s different')}/></td>
             <td><Text style={{fontSize: 20}}>    or    </Text></td>
             <td><Button title="Sign Up" onPress={() => setOutputText('wow, it\'s different')}/></td>
